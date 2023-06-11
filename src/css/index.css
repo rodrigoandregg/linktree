@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900&family=Sen:wght@400;700;800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::selection {
+  background-color: #252525;
+  color: #ffffff;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Sen", sans-serif;
+  color: #252525;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  background-color: #252525;
+  background: url(../images/bg-night.jpg) no-repeat center;
+  background-size: cover;
+  padding: 1em;
+}
+.page__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 25em;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1176470588);
+  backdrop-filter: blur(0.3em);
+  border-top: 1px solid rgba(255, 255, 255, 0.1176470588);
+  border-right: 1px solid rgba(255, 255, 255, 0.1176470588);
+  border-radius: 1em;
+  padding: 2em 2em 1em;
+  gap: 1em;
+}
+.page__list {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+}
+.page__item {
+  background-color: rgba(3, 158, 219, 0.1176470588);
+  backdrop-filter: blur(0.3em);
+  border-top: 1px solid rgba(255, 255, 255, 0.1176470588);
+  border-right: 1px solid rgba(255, 255, 255, 0.1176470588);
+  border-radius: 1em;
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  transition: background-color 1s ease;
+}
+.page__item:hover {
+  transition: all 0.2s ease;
+  background-color: #faab4b;
+}
+.page__copy {
+  justify-self: flex-end;
+  color: #ffffff;
+}
+.page__link--copy {
+  color: #faab4b;
+  font-weight: 700;
+  transition: color 1s ease;
+}
+.page__link--copy:hover {
+  transition: color 0.2s ease;
+  color: #ffffff;
+}
+
+.top {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+.top__avatar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.top__picture {
+  width: 8em;
+  height: 8em;
+  overflow: hidden;
+  border-radius: 15em;
+  border: 2px solid #ffffff;
+}
+.top__img {
+  height: 100%;
+  object-fit: cover;
+}
+.top__heading {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.top__h1 {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.top__h2 {
+  font-weight: 600;
+}
+.top__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 60%;
+  gap: 1em;
+}
+.top__icon {
+  transition: filter 1s ease;
+}
+.top__icon:hover {
+  transition: filter 0.2s ease;
+  filter: brightness(0) saturate(100%) invert(78%) sepia(58%) saturate(678%) hue-rotate(322deg) brightness(99%) contrast(99%);
+}
+
+/*# sourceMappingURL=index.css.map */
