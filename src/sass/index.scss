@@ -1,13 +1,17 @@
 @import "boxes", "reset";
 
+body {
+  background-color: $dark;
+  background: url(../images/bg-night.jpg) no-repeat center;
+  background-size: cover;
+  @include flexBox;
+}
+
 .page {
   @include flexBox($ai: flex-start);
   width: 100%;
   height: 100%;
-  background-color: $dark;
-  background: url(../images/bg-night.jpg) no-repeat center;
-  background-size: cover;
-  padding: 1em;
+  padding: 0.5em;
 
   &__wrapper {
     @include flexBox($ff: column nowrap, $jc: space-between);
