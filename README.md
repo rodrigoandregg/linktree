@@ -41,4 +41,5 @@ Este es un ejemplo de árbol de enlaces personales, puedes clonar el repositorio
 ## 📄 Licencia
 
 MIT Public License v3.0
+
 No puede usarse comercialmente
